@@ -51,6 +51,7 @@ cd log-classifier-genai
 python -m venv venv
 venv\Scripts\activate  # For Windows
 pip install -r requirements.txt
+
 2️⃣ Add .env with your Groq API Key
 Create a .env file:
 
@@ -58,6 +59,7 @@ env
 Copy
 Edit
 GROQ_API_KEY=your_groq_api_key_here
+
 3️⃣ Run the classifier
 Make sure test.csv exists with this structure:
 
