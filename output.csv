@@ -1,0 +1,4 @@
+source,log_message,target_label
+ModernCRM,User 12345 logged in.,Security Alert
+LegacyCRM,Case escalation failed for ticket ID 7324,Workflow Error
+ModernHR,Admin access escalation detected for user 9429,Security Alert

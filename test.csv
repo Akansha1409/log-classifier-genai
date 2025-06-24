@@ -1,0 +1,4 @@
+source,log_message
+ModernCRM,User 12345 logged in.
+LegacyCRM,Case escalation failed for ticket ID 7324
+ModernHR,Admin access escalation detected for user 9429
