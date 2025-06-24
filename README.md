@@ -40,3 +40,52 @@ This project implements a **hybrid log classification system**, combining three 
 - Ideal for rare edge cases and nuanced language understanding.
 
 ---
+
+🚀 How to Run
+1️⃣ Clone the repo and install dependencies
+bash
+Copy
+Edit
+git clone https://github.com/your-username/log-classifier-genai.git
+cd log-classifier-genai
+python -m venv venv
+venv\Scripts\activate  # For Windows
+pip install -r requirements.txt
+2️⃣ Add .env with your Groq API Key
+Create a .env file:
+
+env
+Copy
+Edit
+GROQ_API_KEY=your_groq_api_key_here
+3️⃣ Run the classifier
+Make sure test.csv exists with this structure:
+
+csv
+Copy
+Edit
+source,log_message
+LegacyCRM,Case escalation failed for ticket ID 1234
+ModernCRM,User logged in successfully
+Then run:
+
+bash
+Copy
+Edit
+python classify.py
+This creates output.csv with predicted labels.
+
+4️⃣ (Optional) Train Your Own Model
+bash
+Copy
+Edit
+jupyter notebook
+Open notebooks/model_training.ipynb and run all cells.
+
+📌 Output Example
+csv
+Copy
+Edit
+source,log_message,target_label
+LegacyCRM,Case escalation failed for ticket ID 1234,escalation_error
+ModernCRM,User logged in successfully,info
