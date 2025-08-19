@@ -87,6 +87,6 @@ jupyter notebook
 🔄 Auto-retraining with new labeled logs
 
 💡 Customizable rules and LLM prompts per project
+
 ---
-LegacyCRM,Case escalation failed for ticket ID 1234,escalation_error
-ModernCRM,User logged in successfully,info
+
